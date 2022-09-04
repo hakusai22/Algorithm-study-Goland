@@ -12,6 +12,10 @@ type Person struct {
 	address string
 }
 
+func NewPerson(name string, age int, sex string, address string) *Person {
+	return &Person{name: name, age: age, sex: sex, address: address}
+}
+
 func main() {
 	//实例化后并使用结构体
 	p := Person{} //使用简短声明方式，后面加上{}代表这是结构体
